@@ -22,4 +22,10 @@
 		<Folder Include="Support\" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <None Update="specflow.actions.json">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
+	</ItemGroup>
+
 </Project>
