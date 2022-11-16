@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<RootNamespace>CleanArchitectureBDD.Application.IntegrationTests</RootNamespace>
+		<AssemblyName>CleanArchitectureBDD.Application.IntegrationTests</AssemblyName>
+
+		<IsPackable>false</IsPackable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\src\WebAPI\WebAPI.csproj" />
+	</ItemGroup>
+</Project>

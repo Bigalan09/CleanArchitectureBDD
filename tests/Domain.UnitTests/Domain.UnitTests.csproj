@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<RootNamespace>CleanArchitectureBDD.Domain.UnitTests</RootNamespace>
+		<AssemblyName>CleanArchitectureBDD.Domain.UnitTests</AssemblyName>
+
+		<IsPackable>false</IsPackable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\src\Domain\Domain.csproj" />
+	</ItemGroup>
+</Project>
