@@ -9,25 +9,27 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{08688407
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "src\Application\Application.csproj", "{6AA0EFDD-5691-48F8-92F3-AA5B7F72C72B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "src\Domain\Domain.csproj", "{240944C5-EE3E-47BC-B07D-D3B5CA16CF4D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "src\Domain\Domain.csproj", "{240944C5-EE3E-47BC-B07D-D3B5CA16CF4D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "src\Infrastructure\Infrastructure.csproj", "{D629A6B3-1E9B-4F95-B1A4-B47A0D89DD16}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "src\Infrastructure\Infrastructure.csproj", "{D629A6B3-1E9B-4F95-B1A4-B47A0D89DD16}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI", "src\WebAPI\WebAPI.csproj", "{B7149BFA-B4C7-4CF6-85B8-4157A39813EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAPI", "src\WebAPI\WebAPI.csproj", "{B7149BFA-B4C7-4CF6-85B8-4157A39813EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application.IntegrationTests", "tests\Application.IntegrationTests\Application.IntegrationTests.csproj", "{FD470820-9C43-4ACE-8EE0-11B44963BDBE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application.IntegrationTests", "tests\Application.IntegrationTests\Application.IntegrationTests.csproj", "{FD470820-9C43-4ACE-8EE0-11B44963BDBE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application.UnitTests", "tests\Application.UnitTests\Application.UnitTests.csproj", "{6AE6A0A6-A6C5-4A6B-954D-B1FC59EEDAD8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application.UnitTests", "tests\Application.UnitTests\Application.UnitTests.csproj", "{6AE6A0A6-A6C5-4A6B-954D-B1FC59EEDAD8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain.UnitTests", "tests\Domain.UnitTests\Domain.UnitTests.csproj", "{BB79CFF0-B1E5-4884-9475-4595AD2F64A7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain.UnitTests", "tests\Domain.UnitTests\Domain.UnitTests.csproj", "{BB79CFF0-B1E5-4884-9475-4595AD2F64A7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI.AcceptanceTests", "tests\WebAPI.AcceptanceTests\WebAPI.AcceptanceTests.csproj", "{5B4DC8C3-58A1-4ACA-B0B6-50C668C86622}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAPI.AcceptanceTests", "tests\WebAPI.AcceptanceTests\WebAPI.AcceptanceTests.csproj", "{5B4DC8C3-58A1-4ACA-B0B6-50C668C86622}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{52568890-93F6-4C35-ACF8-BDA078DD0066}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
 		README.md = README.md
 	EndProjectSection
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{4FBD0E3B-1E62-418E-843C-917373377CA4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -67,6 +69,10 @@ Global
 		{5B4DC8C3-58A1-4ACA-B0B6-50C668C86622}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B4DC8C3-58A1-4ACA-B0B6-50C668C86622}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B4DC8C3-58A1-4ACA-B0B6-50C668C86622}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FBD0E3B-1E62-418E-843C-917373377CA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FBD0E3B-1E62-418E-843C-917373377CA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FBD0E3B-1E62-418E-843C-917373377CA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FBD0E3B-1E62-418E-843C-917373377CA4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

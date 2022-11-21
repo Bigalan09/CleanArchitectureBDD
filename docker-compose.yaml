@@ -1,7 +1,0 @@
-services:
-  webapi:
-    image: src/WebAPI/
-    build:
-      dockerfiler: src/WebAPI/Dockerfile
-    ports:
-      - "8080:80"
