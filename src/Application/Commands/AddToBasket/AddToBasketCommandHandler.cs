@@ -1,5 +1,4 @@
-﻿using CleanArchitectureBDD.Application.CQRS.Interfaces;
-using CleanArchitectureBDD.Application.Interfaces;
+﻿using CleanArchitectureBDD.Application.CQRS;
 using CleanArchitectureBDD.Domain.Entities;
 using CleanArchitectureBDD.Domain.Exceptions;
 using FluentValidation;

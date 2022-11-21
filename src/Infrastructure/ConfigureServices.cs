@@ -1,4 +1,4 @@
-﻿using CleanArchitectureBDD.Application.Common.Interfaces;
+﻿using CleanArchitectureBDD.Application.Common;
 using CleanArchitectureBDD.Infrastructure.Services;
 
 namespace Microsoft.Extensions.DependencyInjection;

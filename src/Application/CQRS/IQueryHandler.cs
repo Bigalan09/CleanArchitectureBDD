@@ -1,4 +1,4 @@
-﻿namespace CleanArchitectureBDD.Application.CQRS.Interfaces;
+﻿namespace CleanArchitectureBDD.Application.CQRS;
 
 public interface IQuery
 {

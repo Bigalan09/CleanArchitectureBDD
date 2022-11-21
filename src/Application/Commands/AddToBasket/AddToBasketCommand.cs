@@ -1,4 +1,4 @@
-﻿using CleanArchitectureBDD.Application.CQRS.Interfaces;
+﻿using CleanArchitectureBDD.Application.CQRS;
 
 namespace CleanArchitectureBDD.Application.Commands.AddToBasket;
 
