@@ -1,4 +1,4 @@
-﻿using CleanArchitectureBDD.Application;
+﻿using CleanArchitectureBDD.Application.Common;
 using CleanArchitectureBDD.Domain.Entities;
 
 namespace CleanArchitectureBDD.Infrastructure.Persistence

@@ -1,4 +1,5 @@
-﻿using CleanArchitectureBDD.Domain.Entities;
+﻿using CleanArchitectureBDD.Application.Common;
+using CleanArchitectureBDD.Domain.Entities;
 using CleanArchitectureBDD.Domain.Exceptions;
 using FluentValidation;
 using MediatR;

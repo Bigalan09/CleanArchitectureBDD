@@ -1,6 +1,6 @@
 ﻿using CleanArchitectureBDD.Domain.Entities;
 
-namespace CleanArchitectureBDD.Application;
+namespace CleanArchitectureBDD.Application.Common;
 
 public interface IApplicationContext
 {
