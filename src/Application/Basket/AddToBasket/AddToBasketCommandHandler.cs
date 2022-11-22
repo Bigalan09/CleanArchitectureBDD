@@ -1,12 +1,12 @@
-﻿using CleanArchitectureBDD.Application.CQRS;
-using CleanArchitectureBDD.Domain.Entities;
+﻿using CleanArchitectureBDD.Domain.Entities;
 using CleanArchitectureBDD.Domain.Exceptions;
 using FluentValidation;
+using MediatR;
 using System.Text;
 
-namespace CleanArchitectureBDD.Application.Commands.AddToBasket
+namespace CleanArchitectureBDD.Application.Basket.AddToBasket
 {
-    internal class AddToBasketCommandHandler : ICommandHandler<AddToBasketCommand>
+    internal class AddToBasketCommandHandler : IRequestHandler<AddToBasketCommand, Unit>
     {
         private readonly IApplicationContext _context;
         private readonly IValidator<AddToBasketCommand> _addToBasketCommandValidator;
@@ -19,9 +19,9 @@ namespace CleanArchitectureBDD.Application.Commands.AddToBasket
             _addToBasketCommandValidator = addToBasketCommandValidator;
         }
 
-        public async Task Handle(AddToBasketCommand command)
+        public async Task<Unit> Handle(AddToBasketCommand request, CancellationToken cancellationToken)
         {
-            var validationResults = await _addToBasketCommandValidator.ValidateAsync(command);
+            var validationResults = await _addToBasketCommandValidator.ValidateAsync(request);
             if (!validationResults.IsValid)
             {
                 var failures = validationResults.Errors.ToList();
@@ -30,11 +30,13 @@ namespace CleanArchitectureBDD.Application.Commands.AddToBasket
                 throw new ValidationException(message.ToString());
             }
 
-            Product? product = _context.Products.Where(p => p.Id == command.Id).SingleOrDefault();
+            Product? product = _context.Products.Where(p => p.Id == request.Id).SingleOrDefault();
             if (product == null)
-                throw new NotFoundException(nameof(Product), command.Id);
+                throw new NotFoundException(nameof(Product), request.Id);
 
-            _context.ShoppingBasket.Items.Add(product, command.Quantity);
+            _context.ShoppingBasket.Items.Add(product, request.Quantity);
+
+            return Unit.Value;
         }
     }
 }

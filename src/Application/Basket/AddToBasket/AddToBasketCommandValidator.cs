@@ -1,8 +1,8 @@
 ﻿using FluentValidation;
 
-namespace CleanArchitectureBDD.Application.Commands.AddToBasket
+namespace CleanArchitectureBDD.Application.Basket.AddToBasket
 {
-    internal class AddToBasketCommandValidator : AbstractValidator<AddToBasketCommand>
+    internal class AddToBasketCommandValidator : AbstractValidator<AddToBasketCommand>, IValidator<AddToBasketCommand>
     {
         public AddToBasketCommandValidator()
         {

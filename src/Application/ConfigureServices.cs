@@ -1,4 +1,4 @@
-﻿using CleanArchitectureBDD.Application.Commands.AddToBasket;
+﻿using CleanArchitectureBDD.Application.Basket.AddToBasket;
 using FluentValidation;
 
 namespace Microsoft.Extensions.DependencyInjection;
